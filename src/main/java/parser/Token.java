@@ -10,6 +10,7 @@ package parser;
  *     (use {@link #getName()} to get it).</li>
  *     <li>{@link Token.Type#T_INT} --> Has a int literal as its value (use {@link #getIntValue()} to get it).</li>
  *     <li>{@link Token.Type#T_BOOL} --> Has a boolean literal as its value (use {@link #getBoolValue()} to get it).</li>
+ *     <li>{@link Token.Type#T_FIELD} --> Has a int id as its value (use {@link #getId()} to get it).</li>
  * </ul>
  */
 public class Token {
@@ -82,6 +83,16 @@ public class Token {
          * Represents end of file.
          */
         T_EOF,
+
+        /**
+         * Represents field with given id.
+         */
+        T_FIELD,
+
+        /**
+         * Represents field without id.
+         */
+        T_FIELDEMPTY
     }
 
 
@@ -124,6 +135,14 @@ public class Token {
      */
     public String getName() {
         return this.getStrValue();
+    }
+
+    /**
+     * Getter for token value if token's type is {@link Token.Type#T_FIELD}. This method is only sugar for {@link #getIntValue()}.
+     * @return Value if token contains id, otherwise {@link  NullPointerException}.
+     */
+    public Integer getId(){
+        return this.getIntValue();
     }
 
     /**
