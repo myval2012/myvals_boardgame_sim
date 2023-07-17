@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bf2958-3e9a-46fb-afef-272e032d4e2a" name="Changes" comment="">
+    <list default="true" id="e0bf2958-3e9a-46fb-afef-272e032d4e2a" name="Changes" comment="Token Field and FieldEmpty">
       <change afterPath="$PROJECT_DIR$/src/main/java/parser/Lex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/LineSeparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/parser/LexTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/blank.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/comment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/eq.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/model_board.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/model_player.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/newline.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/Token.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -57,9 +66,98 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="parser" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="parser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LexTest">
+    <configuration name="LexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myvals_boardgame_sim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parser" />
+      <option name="MAIN_CLASS_NAME" value="parser.LexTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LexTest.CommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myvals_boardgame_sim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parser" />
+      <option name="MAIN_CLASS_NAME" value="parser.LexTest" />
+      <option name="METHOD_NAME" value="CommentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LexTest.blankFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myvals_boardgame_sim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parser" />
+      <option name="MAIN_CLASS_NAME" value="parser.LexTest" />
+      <option name="METHOD_NAME" value="blankFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LexTest.newLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myvals_boardgame_sim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parser" />
+      <option name="MAIN_CLASS_NAME" value="parser.LexTest" />
+      <option name="METHOD_NAME" value="newLineTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LexTest" />
+        <item itemvalue="JUnit.LexTest.CommentTest" />
+        <item itemvalue="JUnit.LexTest.newLineTest" />
+        <item itemvalue="JUnit.LexTest.blankFile" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,6 +167,34 @@
       <option name="presentableId" value="Default" />
       <updated>1689523421735</updated>
     </task>
+    <task id="LOCAL-00001" summary="Plugin for running maven compiled program added.">
+      <created>1689595434372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689595434372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Token class version 1.">
+      <created>1689595472024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689595472024</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Token Field and FieldEmpty">
+      <created>1689619289601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689619289601</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Plugin for running maven compiled program added." />
+    <MESSAGE value="Token class version 1." />
+    <MESSAGE value="Token Field and FieldEmpty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Token Field and FieldEmpty" />
   </component>
 </project>

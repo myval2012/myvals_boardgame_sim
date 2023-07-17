@@ -33,7 +33,7 @@ public class Token {
         this.type = type;
         switch (type){
             case T_BOOL -> this.boolValue = (Boolean) value;
-            case T_INT -> this.intValue = (Integer) value;
+            case T_INT, T_FIELD -> this.intValue = (Integer) value;
             case T_STR, T_NAME -> this.strValue = (String) value;
         }
     }

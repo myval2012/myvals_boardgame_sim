@@ -1,0 +1,3 @@
+player{
+income = 14000,
+     name="Petr",isGOOD=   true}

@@ -1,0 +1,4 @@
+figure{life=-1} // this part is comment and therefore should not produce any tokens
+figure{
+smth15=false
+}
